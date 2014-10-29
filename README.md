@@ -35,7 +35,7 @@ npm install -g dnsimple-cli
 ### Install from GitHub
 You can install the latest code (could be unstable) directly from GitHub.
 ```bash
-npm install git+https://github.com/anderly/dnsimple-cli
+npm install anderly/dnsimple-cli
 ```
 
 ### Download Source Code
