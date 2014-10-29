@@ -103,7 +103,7 @@ help:      domain         Commands to manage domains
 help:      contact        Commands to manage your account contacts
 help:      service        Commands to manage your domain services
 help:      template       Commands to manage dns record templates
-help:      user          Commands to manage your users
+help:      user           Commands to manage your users
 help:      subscription   Commands to manage account subscriptions
 help:      price          Commands to view domain pricing
 help:    
