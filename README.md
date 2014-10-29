@@ -67,7 +67,7 @@ echo 'source ~/dnsimple.completion.sh' >> .bash_profile
 
 ## Get Started
 
-Just type the following to get started and see availble commands. For more details see the [command reference](3).
+Just type `dnsimple` at a command prompt to get started and see available commands. For more details see the [command reference](3).
 
 ```bash
 user@host:~$ dnsimple
