@@ -14,6 +14,8 @@ This project's command line interface is based on the [azure-cli](https://github
     * Select current account/subscription
 * Domains
     * List domains in your account
+    * List domains in your account that match a wildcard filter (e.g. *.com)
+    * Show details for a specific domain in your account
 * Contacts
 * Services
 * Templates
