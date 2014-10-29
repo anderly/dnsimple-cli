@@ -43,7 +43,7 @@
     "caller-id": "0.1.x",
     "colors": "0.x.x",
     "commander": "1.0.4",
-    "dnsimple": "0.1.4",
+    "dnsimple": "git+https://fvdm@github.com/nodejs-dnsimple/nodejs-dnsimple.git#commit-ish",
     "easy-table": "0.0.1",
     "event-stream": "3.1.5",
     "eyes": "0.x.x",
