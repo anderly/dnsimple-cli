@@ -67,7 +67,7 @@ echo 'source ~/dnsimple.completion.sh' >> .bash_profile
 
 ## Get Started
 
-Just type `dnsimple` at a command prompt to get started and see available commands. For more details see the [command reference](3).
+Just type `dnsimple` at a command prompt to get started and see available commands. For more details see the [command reference][3].
 
 ```bash
 user@host:~$ dnsimple
@@ -151,7 +151,7 @@ set HTTPS_PROXY=http://127.0.0.1:8888
 ```
 
 ## Learn More
-Please see the DNSimple CLI [command reference](3) for details on current and anticipated commands.
+Please see the DNSimple CLI [command reference][3] for details on current and anticipated commands.
 
 For more information on the DNSimple REST API, please see the [DNSimple API Documentation][2].
 
