@@ -11,8 +11,8 @@ targets/*
 # Node #
 node_modules/
 npm-debug.log
-azure.err
-azure_error
+dnsimple.err
+dnsimple_error
 
 # Builds #
 out/*

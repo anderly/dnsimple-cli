@@ -1,4 +1,4 @@
-# dnsimple-cli command structure
+# dnsimple-cli command reference
 ## (subject to change)
 
     dnsimple
