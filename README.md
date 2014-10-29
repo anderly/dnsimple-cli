@@ -104,7 +104,7 @@ set HTTPS_PROXY=http://127.0.0.1:8888
 ```
 
 ## Learn More
-Please see the DNSimple CLI [command reference](https://github.com/anderly/dnsimple-cli/command-reference.md) for details on current and anticipated commands.
+Please see the DNSimple CLI [command reference](https://github.com/anderly/dnsimple-cli/blob/master/command-reference.md) for details on current and anticipated commands.
 
 For more information on the DNSimple REST API, please see the [DNSimple API Documentation][2].
 
