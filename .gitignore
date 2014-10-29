@@ -1,0 +1,52 @@
+projects/*
+targets/*
+
+# Visual Studio #
+/app.js
+/xPlat.sln
+*.suo
+*.user
+.ntvs_analysis.*
+
+# Node #
+node_modules/
+npm-debug.log
+azure.err
+azure_error
+
+# Builds #
+out/*
+tmp/*
+obj/
+out/
+checkstyle-result.xml
+test-result.xml
+iisnode.yml
+
+# Mac OS #
+.DS_Store
+.DS_Store?
+
+# Windows #
+Thumbs.db
+
+# WebStorm #
+.idea/
+
+# Linux #
+*.swp
+
+# Test Logs #
+test/output/*
+
+# Ignore old_lib #
+old_lib
+
+# Ignore installers for now #
+tools
+
+# Ignore tests for now #
+test
+
+# Ignore features for now #
+features
