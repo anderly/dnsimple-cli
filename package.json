@@ -86,19 +86,19 @@
   "bugs": {
     "url": "https://github.com/anderly/dnsimple-cli/issues"
   },
-  "scripts": {
-    "test": "npm -s run-script jshint && npm -s run-script unit && npm -s run-script unit-arm",
-    "unit": "node scripts/unit.js testlist.txt",
-    "unit-mc": "node scripts/unit.js --mc testlistmc.txt",
-    "unit-arm": "node scripts/unit.js testlistarm.txt",
-    "jshint": "jshint lib --jslint-reporter --extra-ext ._js",
-    "preci": "jshint lib --reporter=checkstyle --extra-ext ._js > checkstyle-result.xml",
-    "ci": "node scripts/unit.js testlist.txt -xunit",
-    "preacceptance": "node scripts/cuke-environment.js setup",
-    "acceptance": "node node_modules/cucumber/bin/cucumber.js",
-    "postacceptance": "node scripts/cuke-environment.js teardown",
-    "extract-labels": "node scripts/extract-labels"
-  },
+  // "scripts": {
+  //   "test": "npm -s run-script jshint && npm -s run-script unit && npm -s run-script unit-arm",
+  //   "unit": "node scripts/unit.js testlist.txt",
+  //   "unit-mc": "node scripts/unit.js --mc testlistmc.txt",
+  //   "unit-arm": "node scripts/unit.js testlistarm.txt",
+  //   "jshint": "jshint lib --jslint-reporter --extra-ext ._js",
+  //   "preci": "jshint lib --reporter=checkstyle --extra-ext ._js > checkstyle-result.xml",
+  //   "ci": "node scripts/unit.js testlist.txt -xunit",
+  //   "preacceptance": "node scripts/cuke-environment.js setup",
+  //   "acceptance": "node node_modules/cucumber/bin/cucumber.js",
+  //   "postacceptance": "node scripts/cuke-environment.js teardown",
+  //   "extract-labels": "node scripts/extract-labels"
+  // },
   "bin": {
     "dnsimple": "./bin/dnsimple"
   }
