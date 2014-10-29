@@ -67,6 +67,51 @@ echo 'source ~/dnsimple.completion.sh' >> .bash_profile
 
 ## Get Started
 
+Just type the following to get started and see availble commands. For more details see the [command reference](3).
+
+```bash
+user@host:~$ dnsimple
+info:         _           _                 _      
+info:        | |         (_)               | |     
+info:      __| |_ __  ___ _ _ __ ___  _ __ | | ___ 
+info:     / _` | '_ \/ __| | '_ ` _ \| '_ \| |/ _ \
+info:    | (_| | | | \__ \ | | | | | | |_) | |  __/
+info:     \__,_|_| |_|___/_|_| |_| |_| .__/|_|\___|
+info:                                | |           
+info:                                |_|           
+info:    
+info:    DNSimple: We make DNS simple.
+info:    
+info:    Tool version 0.0.1
+help:    
+help:    Display help for a given command
+help:      help [options] [command]
+help:    
+help:    Log in to a dnsimple account.
+help:      login [options]
+help:    
+help:    Log out from DNSimple.
+help:      logout [options] [username]
+help:    
+help:    Open the portal in a browser
+help:      portal [options]
+help:    
+help:    Commands:
+help:      account        Commands to manage your account information
+help:      config         Commands to manage your local settings
+help:      domain         Commands to manage domains
+help:      contact        Commands to manage your account contacts
+help:      service        Commands to manage your domain services
+help:      template       Commands to manage dns record templates
+help:      users          Commands to manage your users
+help:      subscription   Commands to manage account subscriptions
+help:      price          Commands to view domain pricing
+help:    
+help:    Options:
+help:      -h, --help     output usage information
+help:      -v, --version  output the application version
+```
+
 In general, following are the steps:
 
 * Login to your DNSimple account.
@@ -106,7 +151,7 @@ set HTTPS_PROXY=http://127.0.0.1:8888
 ```
 
 ## Learn More
-Please see the DNSimple CLI [command reference](https://github.com/anderly/dnsimple-cli/blob/master/command-reference.md) for details on current and anticipated commands.
+Please see the DNSimple CLI [command reference](3) for details on current and anticipated commands.
 
 For more information on the DNSimple REST API, please see the [DNSimple API Documentation][2].
 
@@ -119,3 +164,4 @@ If you encounter any bugs with the library please file an issue in the [Issues](
 [0]:http://dnsimple.com
 [1]:http://sandbox.dnsimple.com
 [2]:http://developer.dnsimple.com/
+[3]:https://github.com/anderly/dnsimple-cli/blob/master/command-reference.md
