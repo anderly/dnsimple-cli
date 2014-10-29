@@ -34,7 +34,7 @@
     			|- delete
     		--------------
     		|- record
-    			|- list
+    			|- list [-t --type <type>]
     			|- add
     			|- show
     			|- update
