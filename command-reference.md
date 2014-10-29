@@ -6,15 +6,16 @@
         |- account
             |- list
             |- set [account/subscription]
+            |- clear
             --------------
             |- env
                 |- list
                 |- show [environment]
         --------------
     	|- domain
-    		|- list
+    		|- list [domain|wildcard: e.g. *.com] [-e --expiring]
     		|- add [domain]
-    		|- show [domain]
+    		|- show [domain] [-d --details]
     		|- delete [domain]
     		--------------
     		|- reset [domain]
