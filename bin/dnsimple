@@ -16,4 +16,4 @@
 // limitations under the License.
 // 
 
-require('/Users/adam/@Git/dnsimple-cli/bin/dnsimple.js');
+require('./dnsimple.js');
