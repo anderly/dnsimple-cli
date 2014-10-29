@@ -74,7 +74,7 @@
     		|- update
     		|- delete
     	--------------
-    	|- services
+    	|- service
     		|- list
     		|- show
     	--------------
@@ -84,10 +84,10 @@
     		|- show
     		|- delete
     	--------------
-    	|- extendedattributes
+    	|- extattr
     		|- list
     	--------------
-    	|- users
+    	|- user
     	--------------
     	|- subscription
     		|- add
