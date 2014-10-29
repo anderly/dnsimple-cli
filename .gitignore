@@ -50,3 +50,6 @@ test
 
 # Ignore features for now #
 features
+
+# Ignore azure commands #
+lib/commands_azure
