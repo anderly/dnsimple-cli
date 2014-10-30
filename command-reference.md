@@ -1,16 +1,20 @@
 # dnsimple-cli command reference
 ## (subject to change)
 
-    dnsimple
+    dnsimple (dns)
     --------------
+        |- login  (Log in to a DNSimple account)
+        |- logout  [username] [-u --username <username>] (Log out from DNSimple)
+        |- portal [-e --environment <environment>] (Open the DNSimple portal in a browser)
         |- account
-            |- list
-            |- set [account/subscription]
-            |- clear
+            |- list (List the currently authenticated accounts)
+            |- show [account email/subscription id] (Show details about an account)
+            |- set <account email/subscription id> (Set the current account)
+            |- clear (Remove an account or environment, or clear all of the stored account and environment info)
             --------------
             |- env
-                |- list
-                |- show [environment]
+                |- list (List the environments')
+                |- show [environment] [--environment <environment>] (Show an environment)
         --------------
     	|- domain
     		|- list [domain|wildcard: e.g. *.com] [-e --expiring]
