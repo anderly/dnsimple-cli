@@ -1,6 +1,6 @@
 # DNSimple CLI for Windows, Mac and Linux
 
-[![Build Status](https://travis-ci.org/anderly/dnsimple-cli.png?branch=master)](https://travis-ci.org/anderly/dnsimple-cli)
+[![NPM version](https://badge.fury.io/js/dnsimple-cli.png)](http://badge.fury.io/js/dnsimple-cli) [![Build Status](https://travis-ci.org/anderly/dnsimple-cli.png?branch=master)](https://travis-ci.org/anderly/dnsimple-cli)
 
 This project provides a cross-platform command line interface for [DNSimple][0]. Specifically, it uses the [DNSimple REST API][2] via [nodejs-dnsimple](https://github.com/fvdm/nodejs-dnsimple) and its associated npm package [dnsimple](https://www.npmjs.org/package/dnsimple).
 
