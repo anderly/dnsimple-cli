@@ -38,8 +38,8 @@
     			|- delete
     		--------------
     		|- record
-    			|- list [-t --type <type>] [-f --filter <filter>]
-    			|- add
+    			|- list [-t --type <type>] [-f --filter <filter>] [domain]
+    			|- add [-r --recordname <recordname>] [-t --type <type>] [-c --content <content>] [domain]
     			|- show
     			|- update
     			|- delete
