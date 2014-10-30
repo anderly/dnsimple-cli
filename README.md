@@ -8,27 +8,47 @@ This project's command line interface is based on the [azure-cli](https://github
 
 ## Current Features
 
-* Accounts
+See the [command reference][3] for complete planned command structure.
+
+---
+* Accounts: `(command: dnsimple account)`
     * Secure authentication for multiple DNSimple accounts/subscriptions
     * List authenticated accounts/subscriptions
     * Select current account/subscription
-* Domains
+    ---
+* Domains: `(command: dnsimple domain)`
     * List domains in your account
     * List domains in your account that match a wildcard filter (e.g. *.com)
     * Show details for a specific domain in your account
     * Add a domain to your account
     * Delete a domain from your account
-    * Show DNS Records for a specific domain
-    * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain
-    * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
-* Contacts
-* Services
-* Templates
-* Extended Attributes
-* Users
-* Subscriptions
-* Prices
+    ---
+    * Records: `(command: dnsimple domain record)`
+        * Show DNS Records for a specific domain
+        * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain
+        * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
+---
+* Contacts:  `(command: dnsimple contact)`
 
+---
+* Services:  `(command: dnsimple service)`
+
+---
+* Templates:  `(command: dnsimple template)`
+
+---
+* Extended Attributes:  `(command: dnsimple extattr)`
+
+---
+* Users:  `(command: dnsimple user)`
+
+---
+* Subscriptions:  `(command: dnsimple subscription)`
+
+---
+* Prices:  `(command: dnsimple price)`
+
+---
 ## Installation
 
 ### Install from npm (coming soon)
