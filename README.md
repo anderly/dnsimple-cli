@@ -90,13 +90,13 @@ help:
 help:    Display help for a given command
 help:      help [options] [command]
 help:    
-help:    Log in to a dnsimple account.
+help:    Log in to a DNSimple account.
 help:      login [options]
 help:    
 help:    Log out from DNSimple.
 help:      logout [options] [username]
 help:    
-help:    Open the portal in a browser
+help:    Open the DNSimple portal in a browser
 help:      portal [options]
 help:    
 help:    Commands:
