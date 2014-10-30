@@ -29,6 +29,8 @@ See the [command reference][3] for complete planned command structure.
         * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
         * Add DNS Records to a domain
         * Show details for a domain DNS Record
+        * Update DNS Records for a domain
+        * Delete DNS Records for a domain
 
 ---
 * Contacts:  `(command: dnsimple contact)`

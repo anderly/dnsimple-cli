@@ -40,9 +40,9 @@
     		|- record
     			|- list [-t --type <type>] [-f --filter <filter>] [domain]
     			|- add [-r --recordname <recordname>] [-t --type <type>] [-c --content <content>] [domain]
-    			|- show  [-i --id recordid] [domain]
-    			|- update
-    			|- delete
+    			|- show [-i --id recordid] [domain]
+    			|- update [-i --id recordid] [-r --recordname <recordname>] [-t --type <type>] [-c --content <content>]  [domain]
+    			|- delete [-i --id recordid] [domain]
     		--------------
     		|- ns (name server)
     			|- update
