@@ -25,7 +25,7 @@
     		|- reset [domain]
     		|- push [domain] -email -contact (Move the domain to another account)
     		--------------
-    		|- check [domain]
+    		|- check [domains] (Check availability of one or more domains)
     		|- register [domain]
     		|- transfer (in) [domain]
     		|- renew [domain]

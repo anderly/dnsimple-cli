@@ -18,19 +18,20 @@ See the [command reference][3] for complete planned command structure.
 
 ---
 * Domains: `(command: dnsimple domain)`
-    * List domains in your account
-    * List domains in your account that match a wildcard filter (e.g. *.com)
-    * Show details for a specific domain in your account
-    * Add a domain to your account
-    * Delete a domain from your account
+    * List domains in your account `(command: dnsimple domain list)`
+    * List domains in your account that match a wildcard filter (e.g. *.com) `(command: dnsimple domain list *.com)`
+    * Show details for a specific domain in your account `(command: dnsimple domain show)`
+    * Add a domain to your account `(command: dnsimple domain add)`
+    * Delete a domain from your account `(command: dnsimple domain delete)`
+    * Check availability of one more domains `(command: dnsimple domain check)`
     * Records: `(command: dnsimple domain record)`
-        * Show DNS Records for a specific domain
-        * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain
-        * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
-        * Add DNS Records to a domain
-        * Show details for a domain DNS Record
-        * Update DNS Records for a domain
-        * Delete DNS Records for a domain
+        * Show DNS Records for a specific domain `(command: dnsimple domain record list)`
+        * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain  `(command: dnsimple domain record list -t CNAME)`
+        * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)  `(command: dnsimple domain record list -f *spf*)`
+        * Add DNS Records to a domain `(command: dnsimple domain record add)`
+        * Show details for a domain DNS Record `(command: dnsimple domain record show)`
+        * Update DNS Records for a domain `(command: dnsimple domain record update)`
+        * Delete DNS Records for a domain `(command: dnsimple domain record delete)`
 
 ---
 * Contacts:  `(command: dnsimple contact)`

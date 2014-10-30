@@ -4,7 +4,7 @@
   "contributors": [
     "Anderly, Adam <adam@anderly.com>"
   ],
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "DNSimple Command Line tool",
   "tags": [
     "dnsimple",
@@ -29,6 +29,7 @@
     }
   ],
   "dependencies": {
+    "accounting": "0.4.1",
     "async": "0.2.7",
     "caller-id": "0.1.x",
     "colors": "0.x.x",
