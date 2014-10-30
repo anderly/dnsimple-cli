@@ -20,7 +20,7 @@ This project's command line interface is based on the [azure-cli](https://github
     * Delete a domain from your account
     * Show DNS Records for a specific domain
     * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain
-    * Show DNS Records whose content matches a specific filter (e.g. *spf*)
+    * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
 * Contacts
 * Services
 * Templates
