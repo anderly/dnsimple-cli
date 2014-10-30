@@ -14,19 +14,20 @@ See the [command reference][3] for complete planned command structure.
 * Accounts: `(command: dnsimple account)`
     * Secure authentication for multiple DNSimple accounts/subscriptions
     * List authenticated accounts/subscriptions
-    * Select current account/subscription
-    ---
+    * Set current account/subscription
+
+---
 * Domains: `(command: dnsimple domain)`
     * List domains in your account
     * List domains in your account that match a wildcard filter (e.g. *.com)
     * Show details for a specific domain in your account
     * Add a domain to your account
     * Delete a domain from your account
-    ---
     * Records: `(command: dnsimple domain record)`
         * Show DNS Records for a specific domain
         * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain
         * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
+
 ---
 * Contacts:  `(command: dnsimple contact)`
 
