@@ -28,6 +28,7 @@ See the [command reference][3] for complete planned command structure.
         * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain
         * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)
         * Add DNS Records to a domain
+        * Show details for a domain DNS Record
 
 ---
 * Contacts:  `(command: dnsimple contact)`

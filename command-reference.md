@@ -40,7 +40,7 @@
     		|- record
     			|- list [-t --type <type>] [-f --filter <filter>] [domain]
     			|- add [-r --recordname <recordname>] [-t --type <type>] [-c --content <content>] [domain]
-    			|- show
+    			|- show  [-i --id recordid] [domain]
     			|- update
     			|- delete
     		--------------
