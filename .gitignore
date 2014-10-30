@@ -39,9 +39,6 @@ Thumbs.db
 # Test Logs #
 test/output/*
 
-# Ignore old_lib #
-old_lib
-
 # Ignore installers for now #
 tools
 
@@ -51,5 +48,7 @@ test
 # Ignore features for now #
 features
 
-# Ignore azure commands #
+# Ignore azure stuff #
 lib/commands_azure
+scripts_azure
+test_azure
