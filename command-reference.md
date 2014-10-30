@@ -38,7 +38,7 @@
     			|- delete
     		--------------
     		|- record
-    			|- list [-t --type <type>]
+    			|- list [-t --type <type>] [-f --filter <filter>]
     			|- add
     			|- show
     			|- update
