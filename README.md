@@ -23,9 +23,10 @@ See the [command reference][3] for complete planned command structure.
     * Show details for a specific domain in your account `(command: dnsimple domain show)`
     * Add a domain to your account `(command: dnsimple domain add)`
     * Delete a domain from your account `(command: dnsimple domain delete)`
-    * Reset a domain token `(command: dnsimple domain reset)`
+    * Reset a domain token for one or more domains`(command: dnsimple domain reset)`
     * Push one or more domains from the current account to another `(command: dnsimple domain push)`
-    * Check availability of one more domains `(command: dnsimple domain check)`
+    * Check availability of one or more domains `(command: dnsimple domain check)`
+    * Register one or more domains `(command: dnsimple domain register)`
     * Records: `(command: dnsimple domain record)`
         * Show DNS Records for a specific domain `(command: dnsimple domain record list)`
         * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain  `(command: dnsimple domain record list -t CNAME)`

@@ -26,7 +26,7 @@
     		|- push [-u --useremail <useremail>] [-c --contactid <contactid>] [domain] (Move a domain to another account)
     		--------------
     		|- check [domains] (Check availability of one or more domains)
-    		|- register [domain]
+    		|- register [-c --contactid <contactid>] [domain]
     		|- transfer (in) [domain]
     		|- renew [domain]
     		|- transferout [domain]
