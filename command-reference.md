@@ -30,7 +30,7 @@
     		|- transfer (in) [domain]
     		|- renew [domain]
     		|- transferout [domain]
-    		|- autorenew [domain] -enable [true|false]
+    		|- autorenew [-e --enable] [-d --disable] [domain]
     		--------------
     		|- member
     			|- list

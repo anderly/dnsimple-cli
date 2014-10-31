@@ -27,6 +27,7 @@ See the [command reference][3] for complete planned command structure.
     * Push one or more domains from the current account to another `(command: dnsimple domain push)`
     * Check availability of one or more domains `(command: dnsimple domain check)`
     * Register one or more domains `(command: dnsimple domain register)`
+    * Enable/Disable Auto-Renewal for one or more domains `(command: dnsimple domain autorenew)`
     * Records: `(command: dnsimple domain record)`
         * Show DNS Records for a specific domain `(command: dnsimple domain record list)`
         * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain  `(command: dnsimple domain record list -t CNAME)`
