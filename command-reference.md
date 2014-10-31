@@ -92,6 +92,7 @@
     		|- list
     	--------------
     	|- user
+            |- add
     	--------------
     	|- subscription
     		|- add

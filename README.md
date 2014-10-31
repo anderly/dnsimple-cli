@@ -56,6 +56,7 @@ See the [command reference][3] for complete planned command structure.
 
 ---
 * Prices:  `(command: dnsimple price)`
+	* List all domain prices
 
 ---
 ## Installation
