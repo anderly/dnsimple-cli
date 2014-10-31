@@ -9,3 +9,9 @@ test/
 
 # Tools #
 tools/
+
+# Ignore azure stuff #
+features
+lib/commands_azure
+scripts_azure
+test_azure

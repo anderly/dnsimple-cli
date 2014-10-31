@@ -23,7 +23,7 @@
     		|- delete [domain]
     		--------------
     		|- reset [domain]
-    		|- push [domain] -email -contact (Move the domain to another account)
+    		|- push [-u --useremail <useremail>] [-c --contactid <contactid>] [domain] (Move a domain to another account)
     		--------------
     		|- check [domains] (Check availability of one or more domains)
     		|- register [domain]
