@@ -2,7 +2,7 @@
 
 [![NPM version](http://img.shields.io/npm/v/dnsimple-cli.svg?style=flat)](http://badge.fury.io/js/dnsimple-cli)
 [![Build Status](http://img.shields.io/travis/anderly/dnsimple-cli.svg?style=flat)](https://travis-ci.org/anderly/dnsimple-cli)
-[![License](http://img.shields.io/badge/license-Apache%202.0-red.svg?style=flat)](http://opensource.org/licenses/Apache-2.0)
+[![License](http://img.shields.io/badge/license-Apache-red.svg?style=flat)](http://opensource.org/licenses/Apache-2.0)
 
 This project provides a cross-platform command line interface for [DNSimple][0]. Specifically, it uses the [DNSimple REST API][2] via [nodejs-dnsimple](https://github.com/fvdm/nodejs-dnsimple) and its associated npm package [dnsimple](https://www.npmjs.org/package/dnsimple).
 

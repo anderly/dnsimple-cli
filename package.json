@@ -22,6 +22,7 @@
   "engines": {
     "node": ">= 0.8.26"
   },
+  "license": "Apache",
   "licenses": [
     {
       "type": "Apache",
