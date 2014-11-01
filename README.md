@@ -1,6 +1,6 @@
 # DNSimple CLI for Windows, Mac and Linux
 
-[![NPM version](http://img.shields.io/npm/v/dnsimple-cli.svg?style=flat)](http://badge.fury.io/js/dnsimple-cli)
+[![NPM version](http://img.shields.io/npm/v/dnsimple-cli.svg?style=flat)](https://npmjs.org/package/dnsimple-cli)
 [![Build Status](http://img.shields.io/travis/anderly/dnsimple-cli.svg?style=flat)](https://travis-ci.org/anderly/dnsimple-cli)
 [![License](http://img.shields.io/badge/license-Apache-red.svg?style=flat)](http://opensource.org/licenses/Apache-2.0)
 
