@@ -22,8 +22,7 @@
   "engines": {
     "node": ">= 0.8.26"
   },
-  "license": "Apache",
-  "licenses": [
+  "license": [
     {
       "type": "Apache",
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
