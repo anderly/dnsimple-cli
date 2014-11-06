@@ -8,7 +8,6 @@ This project provides a cross-platform command line interface for [DNSimple][0].
 
 This project's command line interface is based on the [azure-cli](https://github.com/Azure/azure-sdk-tools-xplat), although its features and functionality are entirely different and not related to [azure](http://azure.microsoft.com/) whatsoever.
 
---
 Installation
 ------------
 
@@ -49,7 +48,7 @@ npm install
 Usage
 -----
 
-Just type `dnsimple` or `dns` at a command prompt to get started and see available commands. Please see the [command reference][3] and [wiki](wiki) for more details.
+Just type `dnsimple` or `dns` at a command prompt to get started and see available commands. Please see the [command reference][3] and [wiki][4] for more details.
 
 ```bash
 user@host:~$ dnsimple
@@ -134,7 +133,7 @@ user           Commands to manage your users
 subscription   Commands to manage account subscriptions
 price          Commands to view domain pricing
 ```
-Please see the [command reference][3] and [wiki](wiki) for more details.
+Please see the [command reference][3] and [wiki][4] for more details.
 
 ## Setting up Fiddler for CLI
 
@@ -146,7 +145,7 @@ set HTTPS_PROXY=http://127.0.0.1:8888
 ```
 
 ## Learn More
-Please see the [command reference][3] and [wiki](wiki) for details and examples of all commands.
+Please see the [command reference][3] and [wiki][4] for details and examples of all commands.
 
 For more information on the DNSimple REST API, please see the [DNSimple API Documentation][2].
 
@@ -160,3 +159,4 @@ If you encounter any bugs with the library please file an issue in the [Issues](
 [1]:http://sandbox.dnsimple.com
 [2]:http://developer.dnsimple.com/
 [3]:https://github.com/anderly/dnsimple-cli/blob/master/command-reference.md
+[4]:https://github.com/anderly/dnsimple-cli/wiki
