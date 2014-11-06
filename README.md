@@ -8,72 +8,32 @@ This project provides a cross-platform command line interface for [DNSimple][0].
 
 This project's command line interface is based on the [azure-cli](https://github.com/Azure/azure-sdk-tools-xplat), although its features and functionality are entirely different and not related to [azure](http://azure.microsoft.com/) whatsoever.
 
-## Current Features
-
-See the [command reference][3] for complete planned command structure.
-
 --
-* Accounts: `(command: dnsimple account)`
-    * Secure authentication for multiple DNSimple accounts/subscriptions
-    * List authenticated accounts/subscriptions
-    * Set current account/subscription
+Installation
+------------
 
---
-* Domains: `(command: dnsimple domain)`
-    * List domains in your account `(command: dnsimple domain list)`
-    * List domains in your account that match a wildcard filter (e.g. *.com) `(command: dnsimple domain list *.com)`
-    * Show details for a specific domain in your account `(command: dnsimple domain show)`
-    * Add a domain to your account `(command: dnsimple domain add)`
-    * Delete a domain from your account `(command: dnsimple domain delete)`
-    * Reset a domain token for one or more domains`(command: dnsimple domain reset)`
-    * Push one or more domains from the current account to another `(command: dnsimple domain push)`
-    * Check availability of one or more domains `(command: dnsimple domain check)`
-    * Register one or more domains `(command: dnsimple domain register)`
-    * Enable/Disable Auto-Renewal for one or more domains `(command: dnsimple domain autorenew)`
-    * Records: `(command: dnsimple domain record)`
-        * Show DNS Records for a specific domain `(command: dnsimple domain record list)`
-        * Show DNS Records of a specific type (A, CNAME, TXT, NS, etc.) for a specific domain  `(command: dnsimple domain record list -t CNAME)`
-        * Show DNS Records whose content matches a specific filter (e.g. \*spf\*)  `(command: dnsimple domain record list -f *spf*)`
-        * Add DNS Records to a domain `(command: dnsimple domain record add)`
-        * Show details for a domain DNS Record `(command: dnsimple domain record show)`
-        * Update DNS Records for a domain `(command: dnsimple domain record update)`
-        * Delete DNS Records for a domain `(command: dnsimple domain record delete)`
+The release on npm is the latest stable version:
 
---
-* Contacts:  `(command: dnsimple contact)`
-
---
-* Services:  `(command: dnsimple service)`
-
---
-* Templates:  `(command: dnsimple template)`
-
---
-* Extended Attributes:  `(command: dnsimple extattr)`
-
---
-* Users:  `(command: dnsimple user)`
-
---
-* Subscriptions:  `(command: dnsimple subscription)`
-
---
-* Prices:  `(command: dnsimple price)`
-	* List all domain prices
-
---
-## Installation
-
-### Install from npm (coming soon)
-
-You can install the dnsimple-cli npm package directly.
 ```bash
 npm install -g dnsimple-cli
 ```
-### Install from GitHub
-You can install the latest code (could be unstable) directly from GitHub.
+
+The code on Github is the most recent version, but can be unstable:
+
 ```bash
 npm install anderly/dnsimple-cli
+```
+
+### dnsimple cli on Ubuntu
+If you want to run dnsimple cli on Ubuntu, then you should install **nodejs-legacy** instead of **nodejs**. For more information please check the following links:
+- [why there is a problem with nodejs installation on ubuntu](http://stackoverflow.com/questions/14914715/express-js-no-such-file-or-directory/14914716#14914716)
+- [how to solve the nodejs installation problem on ubuntu](https://github.com/expressjs/keygrip/issues/7)
+
+Please perform the installation steps in following order:
+```bash
+sudo apt-get install nodejs-legacy
+sudo apt-get install npm
+npm install -g dnsimple-cli
 ```
 
 ### Download Source Code
@@ -86,26 +46,10 @@ cd ./dnsimple-cli
 npm install
 ```
 
-### Configure auto-complete
+Usage
+-----
 
-Auto-complete is supported for Mac and Linux.
-
-To enable it in zsh, run:
-
-```bash
-echo '. <(dnsimple --completion)' >> .zshrc
-```
-
-To enable it in bash, run:
-
-```bash
-dnsimple --completion >> ~/dnsimple.completion.sh
-echo 'source ~/dnsimple.completion.sh' >> .bash_profile
-```
-
-## Get Started
-
-Just type `dnsimple` at a command prompt to get started and see available commands. For more details see the [command reference][3].
+Just type `dnsimple` or `dns` at a command prompt to get started and see available commands. Please see the [command reference][3] and [wiki](wiki) for more details.
 
 ```bash
 user@host:~$ dnsimple
@@ -120,7 +64,7 @@ info:                                |_|
 info:    
 info:    DNSimple: We make DNS simple.
 info:    
-info:    Tool version 0.0.1
+info:    Tool version 0.3.0
 help:    
 help:    Display help for a given command
 help:      help [options] [command]
@@ -150,35 +94,48 @@ help:      -h, --help     output usage information
 help:      -v, --version  output the application version
 ```
 
-In general, following are the steps:
+Authentication
+-----
 
-* Login to your DNSimple account.
-* Use the commands
+Authentication by **email + password** and **email + token** are both supported. If you authenticate using **email + password**, your account api token is retrieved and used for all subsequent calls. All credentials are securely stored in OS-specific secure credential stores such as OS X Keychain or Windows Credential Manager.
 
-The first step can be different for different environments you are targeting. The DNSimple [sandbox][1] is supported in addition to [production][0].
+The DNSimple [sandbox][1] environment is supported in addition to [production][0].
 
-### Login directly from dnsimple-cli
+### Password Authentication
 
 ```bash
 # This will prompt for your password in the console
 dnsimple login -u <your dnsimple account email address>
-
-# use the commands to manage your domains/dns/services/templates
-dnsimple domain list
 ```
-
-### dnsimple cli on Ubuntu
-If you want to run dnsimple cli on Ubuntu, then you should install **nodejs-legacy** instead of **nodejs**. For more information please check the following links:
-- [why there is a problem with nodejs installation on ubuntu](http://stackoverflow.com/questions/14914715/express-js-no-such-file-or-directory/14914716#14914716)
-- [how to solve the nodejs installation problem on ubuntu](https://github.com/expressjs/keygrip/issues/7)
-
-Please perform the installation steps in following order:
+or
 ```bash
-sudo apt-get install nodejs-legacy
-sudo apt-get install npm
-npm install -g dnsimple-cli
+# Specifying the -e --environment parameter allows you to login to the Sanbox enivonrment. 
+# Production is the default.
+dnsimple login -u <your dnsimple account email address> -e Sandbox
 ```
-    
+
+### Token Authentication
+
+```bash
+dnsimple login -u <your dnsimple account email address> -t <your dnsimple account api token>
+```
+
+Commands
+--------
+Once authenticated, you can begin using the following top-level command categories:
+```
+# Command Categories:
+account        Commands to manage your account information
+domain         Commands to manage domains
+contact        Commands to manage your account contacts
+service        Commands to manage your domain services
+template       Commands to manage dns record templates
+user           Commands to manage your users
+subscription   Commands to manage account subscriptions
+price          Commands to view domain pricing
+```
+Please see the [command reference][3] and [wiki](wiki) for more details.
+
 ## Setting up Fiddler for CLI
 
 You need to set the following environment variables to capture the HTTP traffic generated from the execution of dnsimple cli commands
@@ -189,7 +146,7 @@ set HTTPS_PROXY=http://127.0.0.1:8888
 ```
 
 ## Learn More
-Please see the DNSimple CLI [command reference][3] for details on current and anticipated commands.
+Please see the [command reference][3] and [wiki](wiki) for details and examples of all commands.
 
 For more information on the DNSimple REST API, please see the [DNSimple API Documentation][2].
 

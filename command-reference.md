@@ -33,9 +33,9 @@
     		|- autorenew [-e --enable] [-d --disable] [domain]
     		--------------
     		|- member
-    			|- list
-    			|- add
-    			|- delete
+    			|- list (Show domain members)
+    			|- add [member] (Grant a user access to a domain)
+    			|- delete [member] (Revoke a user\'s access for a domain)
     		--------------
     		|- record
     			|- list [-t --type <type>] [-f --filter <filter>] [domain]
